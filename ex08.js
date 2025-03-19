@@ -1,5 +1,11 @@
 function afficherProprietes(obj) {
-	return `nom: ${obj.nom}, age: ${obj.age}, ville: ${obj.ville}`;
+	let obje = Object.keys(obj);
+	console.log(obje);
+	let returna = "";
+	for (let i = 0; i < obje.length; i++) {
+		returna += `${obje[i]}: ${obj[obje[i]]}, `;
+	}
+	return returna;
 }
 
 console.log(afficherProprietes({ nom: "Alice", age: 30, ville: "Paris" })); // 'nom: Alice, age: 30, ville: Paris'
