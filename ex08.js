@@ -1,6 +1,5 @@
 function afficherProprietes(obj) {
 	let obje = Object.keys(obj);
-	console.log(obje);
 	let returna = "";
 	for (let i = 0; i < obje.length; i++) {
 		returna += `${obje[i]}: ${obj[obje[i]]}`;
